@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Data</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+<body><br>
+    <div class="container">
+        <h2 class="page-heading ">Mosquito Weather Based Predictor</h2>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="cityName">City</label>
+                    <input type="text" class="form-control" id="cityName" name="cityName" [(ngModel)]="cityName" placeholder="Enter the city name">
+                </div>
+                <button class="btn btn-success" (click)="loaddata(cityName)">Prediction</button>
+
+            </form>
+        </div>
+
+        <div class="data-container" *ngIf="cityData">
+            <div class="close-icon" (click)="cityData = null">&times;</div>
+            <img src="\assets\images\tamilNadu-removebg.png" alt=""  style="width: 50px; height:50; margin-top: -27px;">
+           
+          <ul>
+    <li><span class="label">City:</span> {{cityData.city}}</li>
+    <li><span class="label">Percentage:</span> <span [style.color]="cityData.percentage > 70 ? 'red' : (cityData.percentage > 50 ? 'red' : 'red')">{{cityData.percentage}}%</span></li>
+    <li><span class="label">Prediction:</span> {{cityData.prediction}} </li>
+    <hr>
+    <li><b>Municipal Corporation Contact Information:</b></li>
+    <li><span class="label">Phone:</span> {{cityData.phone}}</li>
+    <li><span class="label">Email:</span> {{cityData.email}}</li>
+</ul>
+
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</body>
+</html>

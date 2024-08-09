@@ -1,0 +1,102 @@
+
+html{
+    height:695px;
+}
+body {
+    background-image: url('src\assets\images\trees-7191822_1280.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:inherit;
+  }
+  .page-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #007bff; /* blue color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* text shadow for depth */
+}
+
+        .form-container {
+       
+            margin-top: 90px; /* Adjust top position as needed */
+            max-width: 400px;
+            /* margin: 0 auto; */
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for form elements */
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #6c757d;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ced4da;
+        }
+
+        button {
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+
+        .container {
+            position: relative;
+            height: 100vh; /* Set the height of the container to the viewport height */
+        }
+
+        .data-container {
+            position: absolute;
+            top: 100px; /* Adjust top position as needed */
+            right: 50px; /* Adjust right position as needed */
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px; /* Adjust width as needed */
+            text-align: center; /* Align content to the center horizontally */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left; /* Align list items to the left */
+        }
+
+        li {
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #495057;
+        }
+        .data-container .close-icon {
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 30px;
+            color: #777;
+        }
+        .label {
+            font-weight: bold;
+            color: #007bff; /* Blue color */
+            margin-right: 5px; /* Adjust as needed */
+        }
+        
+
+       
+         
+        
